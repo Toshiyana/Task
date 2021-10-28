@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -17,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="31" translatesAutoresizingMaskIntoConstraints="NO" id="WL2-yb-P9Y">
-                                <rect key="frame" x="100" y="144" width="214" height="467.5"/>
+                                <rect key="frame" x="100" y="144" width="214" height="406.5"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xfG-Pp-zPu">
                                         <rect key="frame" x="0.0" y="0.0" width="214" height="34"/>
@@ -51,15 +52,8 @@
                                             <action selector="calcButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="Mgl-OC-iD4"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AbK-Zv-dtK">
-                                        <rect key="frame" x="0.0" y="386" width="214" height="30"/>
-                                        <state key="normal" title="Clear"/>
-                                        <connections>
-                                            <action selector="clearButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="Eyw-ox-LxJ"/>
-                                        </connections>
-                                    </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="miS-fJ-a0r">
-                                        <rect key="frame" x="0.0" y="447" width="214" height="20.5"/>
+                                        <rect key="frame" x="0.0" y="386" width="214" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -76,13 +70,11 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="calcButton" destination="moA-hg-2rn" id="uwo-O9-Vwe"/>
-                        <outlet property="clearButton" destination="AbK-Zv-dtK" id="FX8-wT-T2H"/>
-                        <outlet property="numText1" destination="xfG-Pp-zPu" id="MMy-Uq-PG3"/>
-                        <outlet property="numText2" destination="Buh-Ox-aLY" id="obv-UU-XNC"/>
-                        <outlet property="numText3" destination="JOW-Dn-r82" id="HxZ-VC-BL8"/>
-                        <outlet property="numText4" destination="7Tb-U9-gYE" id="EqX-p1-noL"/>
-                        <outlet property="numText5" destination="fT4-yy-E4B" id="m94-OF-KL3"/>
+                        <outlet property="numTextField1" destination="xfG-Pp-zPu" id="MMy-Uq-PG3"/>
+                        <outlet property="numTextField2" destination="Buh-Ox-aLY" id="obv-UU-XNC"/>
+                        <outlet property="numTextField3" destination="JOW-Dn-r82" id="HxZ-VC-BL8"/>
+                        <outlet property="numTextField4" destination="7Tb-U9-gYE" id="EqX-p1-noL"/>
+                        <outlet property="numTextField5" destination="fT4-yy-E4B" id="m94-OF-KL3"/>
                         <outlet property="resultLabel" destination="miS-fJ-a0r" id="shL-Q3-BBl"/>
                     </connections>
                 </viewController>
